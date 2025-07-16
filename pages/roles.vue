@@ -5,7 +5,7 @@ import { useRolesStore } from '~/stores/roles';
 const store = useRolesStore()
 const data = ref(store);
 const fetchedNewRoles = ref<UserRole[]>([]);
-const interval = ref<NodeJS.Timeout | null>(null);
+let interval: NodeJS.Timeout | null = null;
 
 const developerRoles = computed(() => data.value.roles.filter(r => r.role.toLowerCase() === 'developer').map(r => r.role));
 const designerRoles = computed(() => data.value.roles.filter(r => r.role.toLowerCase() === 'designer' || r.role.toLowerCase() === 'ux').map(r => r.role));
@@ -16,7 +16,7 @@ store.fetch();
 
 onBeforeMount(() => {
 
-  interval.value = setInterval(async () => {
+  interval = setInterval(async () => {
     const res = await $fetch("/api/roles");
     console.log("Roles fetched", res.results);
     fetchedNewRoles.value = res.results
@@ -31,15 +31,18 @@ onBeforeMount(() => {
 });
 
 onUnmounted(() => {
-  if (interval.value) {
-    clearInterval(interval.value);
+  if (interval) {
+    clearInterval(interval);
   }
 });
 
 const filterNewRoles = () => {
   const existingRoleIds = new Set(data.value.roles.map(role => role.personId));
   fetchedNewRoles.value = fetchedNewRoles.value.filter(role => !existingRoleIds.has(role.personId));
-  console.log("New roles filtered", fetchedNewRoles.value, fetchedNewRoles.value.length);
+
+  if (fetchedNewRoles.value.length > 0) {
+    store.add(fetchedNewRoles.value);
+  }
 };
 
 </script>

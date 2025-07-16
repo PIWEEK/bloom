@@ -8,5 +8,10 @@ export default defineNuxtConfig({
     postHogHost: process.env.POSTHOG_HOST,
     postHogProjectId: process.env.POSTHOG_PROJECT_ID,
     postHogDefaults: process.env.POSTHOG_DEFAULTS,
-  }
+  },
+  eslint: {
+    config: {
+        stylistic: true,
+      }
+    }
 })
