@@ -18,11 +18,10 @@ onBeforeMount(() => {
 
   interval = setInterval(async () => {
     const res = await $fetch("/api/roles");
-    console.log("Roles fetched", res.results);
     fetchedNewRoles.value = res.results
       .filter(role => role[0] !== null && role[1] !== null)
       .map(role => ({
-        role: role[0],
+        roleName: role[0],
         personId: role[1],
       }));
       filterNewRoles();

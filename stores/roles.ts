@@ -16,7 +16,7 @@ export const useRolesStore = defineStore("rolesStore", {
         ?.filter(role => role[0] !== null && role[1] !== null)
         .map(role => {
           return {
-            role: role[0],
+            roleName: role[0],
             personId: role[1],
           };
         }) ?? [];

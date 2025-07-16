@@ -1,13 +1,6 @@
 export default defineEventHandler(async () => {
   const config = useRuntimeConfig()
 
-  console.log('Using PostHog configuration:', {
-    posthogApiKey: config.posthogApiKey,
-    postHogHost: config.postHogHost,
-    postHogProjectId: config.postHogProjectId,
-    postHogDefaults: config.postHogDefaults,
-  });
-
   const posthogUrl = config.postHogHost;
   const projectId = config.postHogProjectId;
   const personalApiKey = config.posthogApiKey;

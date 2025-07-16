@@ -1,4 +1,4 @@
 export type UserRole = {
-  role: string;
+  roleName: string;
   personId: string;
 };
