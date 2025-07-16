@@ -3,8 +3,8 @@
     <h1>Hello World</h1>
 
     <ul>
-       <li><NuxtLink to="/roles">Roles</NuxtLink></li>
-       <li><NuxtLink to="/codex">Codex</NuxtLink></li>
+      <li><NuxtLink to="/roles">Roles</NuxtLink></li>
+      <li><NuxtLink to="/codex">Codex</NuxtLink></li>
     </ul>
   </div>
 </template>
