@@ -1,6 +1,11 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@nuxt/eslint', '@nuxtjs/tailwindcss', '@pinia/nuxt'],
+  modules: [
+    '@nuxt/eslint',
+    '@nuxtjs/tailwindcss',
+    '@pinia/nuxt',
+    'motion-v/nuxt'],
+  components: true,
   devtools: { enabled: true },
   runtimeConfig: {
     posthogApiKey: process.env.POSTHOG_API_KEY,

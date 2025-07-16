@@ -14,6 +14,7 @@
   "dependencies": {
     "@nuxtjs/tailwindcss": "^6.14.0",
     "@pinia/nuxt": "^0.11.1",
+    "motion-v": "^1.5.0",
     "nuxt": "^3.17.7",
     "nuxt-posthog": "^1.6.3",
     "pinia": "^3.0.3",

@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { useAnimate, useInView } from 'motion-v'
+
 const props = defineProps <{
   user: {
     roleName: string
@@ -21,10 +23,22 @@ const avatarUrl = computed(() => {
       return '/images/developer-avatar.png'
   }
 })
+
+const [userCard, animate] = useAnimate()
+const isInView = useInView(userCard)
+
+watch(isInView, (inView) => {
+  if (inView) {
+    animate(userCard.value, { opacity: 1 }, { duration: 1 })
+  }
+})
 </script>
 
 <template>
-  <div class="user-card">
+  <div
+    ref="userCard"
+    class="user-card"
+  >
     <img
       :src="avatarUrl"
       alt=""
@@ -40,6 +54,7 @@ const avatarUrl = computed(() => {
   border: 1px solid #eee;
   padding: 16px;
   aspect-ratio: 1 / 1;
+  opacity: 0;
 }
 
 .user-role {

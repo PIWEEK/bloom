@@ -5,6 +5,6 @@ export default withNuxt(
   {
     rules: {
       'vue/comma-dangle': ['error', 'always-multiline'],
-    }
-  }
+    },
+  },
 )
