@@ -3,8 +3,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/eslint',
     '@nuxtjs/tailwindcss',
-    '@pinia/nuxt',
-    'motion-v/nuxt'],
+    '@pinia/nuxt'],
   components: true,
   devtools: { enabled: true },
   runtimeConfig: {
