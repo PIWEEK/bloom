@@ -1,6 +1,20 @@
-# Nuxt Minimal Starter
+# BLOOM
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+  Participants:Xavi Julián Guillermo Adán
+  Project name: Penpot Bloom
+  Type: Interactive Data Visualization / UX-Data Exploration
+
+> To create an engaging and insightful visual representation of how designers and developers interact within Penpot, using real event data generated through usage of the tool (e.g., component editing, library usage, inspect actions, canvas collaboration, etc.).
+
+Penpot Bloom aims to build a dynamic data visualization — ideally a chord diagram or relational network — that reveals the connections between users and their roles, with a focus on:
+Which types of profiles (designer/developer) are more active.
+
+- How they collaborate and where those interactions take place.
+- What kinds of actions are most common per role.
+- Potential collaboration hubs (users who act as bridges between others).
+
+This project seeks to uncover usage patterns and collaboration flows, highlight cross-functional behaviors, and offer insights into improving Penpot’s user experience across different user types.
+
 
 ## Setup
 
@@ -9,67 +23,4 @@ Make sure to install dependencies:
 ```bash
 # npm
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
