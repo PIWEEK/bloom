@@ -40,7 +40,6 @@ const avatarUrl = computed(() => {
   border: 1px solid #eee;
   padding: 16px;
   aspect-ratio: 1 / 1;
-  opacity: 0;
 }
 
 .user-role {

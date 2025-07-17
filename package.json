@@ -14,8 +14,9 @@
   "dependencies": {
     "@nuxtjs/tailwindcss": "^6.14.0",
     "@pinia/nuxt": "^0.11.1",
+    "animejs": "^4.0.2",
     "nuxt": "^3.17.7",
-    "nuxt-posthog": "^1.6.3",
+    "nuxt-svgo": "^4.2.4",
     "pinia": "^3.0.3",
     "vue": "^3.5.17",
     "vue-router": "^4.5.1"

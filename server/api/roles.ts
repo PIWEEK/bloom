@@ -1,11 +1,11 @@
 export default defineEventHandler(async () => {
   const config = useRuntimeConfig()
 
-  const posthogUrl = config.postHogHost;
-  const projectId = config.postHogProjectId;
-  const personalApiKey = config.posthogApiKey;
+  const posthogUrl = config.postHogHost
+  const projectId = config.postHogProjectId
+  const personalApiKey = config.posthogApiKey
 
-  const url = `${posthogUrl}/api/projects/${projectId}/query/`;
+  const url = `${posthogUrl}/api/projects/${projectId}/query/`
 
   console.log('Fetching roles from PostHog API...')
 
@@ -14,7 +14,7 @@ export default defineEventHandler(async () => {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        Authorization: `Bearer ${personalApiKey}`,
+        'Authorization': `Bearer ${personalApiKey}`,
       },
       body: {
         query: {
@@ -23,16 +23,17 @@ export default defineEventHandler(async () => {
           SELECT role, person_id
           FROM onboarding_replies
           WHERE role IS NOT NULL
-          LIMIT 200
-          `
-        }
+          LIMIT 50
+          `,
+        },
       },
-    }) as { results: string[][] };
+    }) as { results: string[][] }
 
-    const data = response;
+    const data = response
 
-    return data;
-  } catch (err) {
+    return data
+  }
+  catch (err) {
     console.error('Error fetching roles from PostHog:', err)
     throw createError({
       statusCode: 500,

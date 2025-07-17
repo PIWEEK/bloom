@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80" height="80" fill="none" version="1.1" viewBox="2869.5 585.6 80 80" xmlns="http://www.w3.org/2000/svg">
+ <g transform="translate(1.1487 5.5686)" clip-rule="evenodd">
+  <g transform="translate(-22.947 -28.15)" fill="#000">
+   <path class="fills" d="m2970 627.4c0.2 0.2 0.2 0.6 0 0.8l-51 45.2c-0.3 0.2-0.6 0.2-0.8 0l-2.7-3.3a0.6 0.6 0 0 1 0-0.8l51-45.2c0.3-0.2 0.6-0.2 0.8 0z" fill="#ff1ebd"/>
+   <g class="strokes" stroke-linejoin="round" stroke-miterlimit="10">
+    <g class="inner-stroke-shape">
+     <defs>
+      <clipPath id="b">
+       <use href="#a"/>
+      </clipPath>
+     </defs>
+     <use clip-path="url(#b)" href="#a"/>
+    </g>
+   </g>
+   <path class="fills" d="m2966 622.3c0.1 0.2 0 0.5-0.1 0.7l-51 45.3c-0.3 0.2-0.6 0.2-0.8 0l-2.7-3.3a0.6 0.6 0 0 1 0-0.8l51-45.3c0.3-0.2 0.6-0.2 0.8 0l2.7 3.4z" fill="#ff1ebd"/>
+   <g class="strokes" stroke-linejoin="round" stroke-miterlimit="10">
+    <g class="inner-stroke-shape">
+     <defs>
+      <clipPath id="d">
+       <use href="#c"/>
+      </clipPath>
+     </defs>
+     <use clip-path="url(#d)" href="#c"/>
+    </g>
+   </g>
+   <path class="fills" d="m2961.6 617.2c0.2 0.2 0.2 0.6 0 0.8l-51 45.2c-0.3 0.2-0.6 0.2-0.8 0l-2.7-3.3a0.6 0.6 0 0 1 0-0.8l51-45.2c0.3-0.2 0.6-0.2 0.8 0z" fill="#ff1ebd"/>
+   <g class="strokes" stroke-linejoin="round" stroke-miterlimit="10">
+    <g class="inner-stroke-shape">
+     <defs>
+      <clipPath id="f">
+       <use href="#e"/>
+      </clipPath>
+     </defs>
+     <use clip-path="url(#f)" href="#e"/>
+    </g>
+   </g>
+  </g>
+  <path class="fills" d="m2883.5 650.05c0.4-0.1 0.5-0.6 0.3-1l-6.5-7.4c-0.3-0.3-0.7-0.3-1 0l-6.7 11.9c-0.2 0.5 0.2 1 0.7 0.9l13.2-4.4" fill="#ff1ebd"/>
+ </g>
+ <g class="strokes" transform="translate(-22.947 -28.15)" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="10">
+  <g class="inner-stroke-shape">
+   <defs>
+    <clipPath id="h">
+     <use href="#g"/>
+    </clipPath>
+   </defs>
+   <use clip-path="url(#h)" href="#g"/>
+  </g>
+ </g>
+</svg>

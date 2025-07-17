@@ -3,7 +3,9 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/eslint',
     '@nuxtjs/tailwindcss',
-    '@pinia/nuxt'],
+    '@pinia/nuxt',
+    'nuxt-svgo',
+  ],
   components: true,
   devtools: { enabled: true },
   runtimeConfig: {
@@ -17,5 +19,8 @@ export default defineNuxtConfig({
     config: {
       stylistic: true,
     },
+  },
+  svgo: {
+    dts: true,
   },
 })
